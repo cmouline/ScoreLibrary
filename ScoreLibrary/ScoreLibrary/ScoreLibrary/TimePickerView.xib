@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimePickerView" customModule="JuJitsuScoreboard" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="closeButton" destination="Hyy-No-tHp" id="0FB-N8-25W"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ivG-De-V1g"/>
+                <outlet property="timePicker" destination="mOC-qA-dAF" id="pve-yK-VH2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOC-qA-dAF">
+                    <rect key="frame" x="50" y="0.0" width="100" height="150"/>
+                </pickerView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyy-No-tHp" customClass="CustomButton" customModule="JuJitsuScoreboard" customModuleProvider="target">
+                    <rect key="frame" x="160" y="10" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Jo9-XS-P8B"/>
+                        <constraint firstAttribute="height" constant="30" id="ugl-kp-r1g"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hyy-No-tHp" secondAttribute="trailing" constant="10" id="4hQ-aT-FUy"/>
+                <constraint firstItem="mOC-qA-dAF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cx1-KM-MAr"/>
+                <constraint firstItem="Hyy-No-tHp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="boy-Hk-pFh"/>
+                <constraint firstAttribute="bottom" secondItem="mOC-qA-dAF" secondAttribute="bottom" id="dE0-YM-H0c"/>
+                <constraint firstAttribute="trailing" secondItem="mOC-qA-dAF" secondAttribute="trailing" constant="50" id="hHc-hz-1d9"/>
+                <constraint firstItem="mOC-qA-dAF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="qRm-Ib-sAp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-139.19999999999999" y="-125.03748125937032"/>
+        </view>
+    </objects>
+</document>

@@ -42,10 +42,7 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
     func setup() {
         for name in UIFont.familyNames {
             print(name, separator: "", terminator: "")
-            if let nameString = name as? String
-            {
-                print(UIFont.fontNames(forFamilyName: nameString), separator: "", terminator: "")
-            }
+            print(UIFont.fontNames(forFamilyName: name), separator: "", terminator: "")
         }
 
         self.alpha = 0
@@ -79,11 +76,11 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
             title = Helper.formatTimeIntervalWithoutDecimal(interval: timeData[component][row])
         }
         let pickerLabel = UILabel()
-        let myTitle = NSAttributedString(string: title,
-                                         attributes: [
-                                            NSAttributedString.Key.font: UIFont(name: "LemonMilk", size: 28.0)!,
-                                            NSAttributedString.Key.foregroundColor: UIColor.black
-            ])
+//        let myTitle = NSAttributedString(string: title,
+//                                         attributes: [
+//                                            NSAttributedString.Key.font: UIFont(name: "LemonMilk", size: 28.0)!,
+//                                            NSAttributedString.Key.foregroundColor: UIColor.black
+//            ])
         pickerLabel.textAlignment = .center
         pickerLabel.text = title
         return pickerLabel

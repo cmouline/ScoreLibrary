@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ScoreLibrary"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "A personal Library for Score suite apps"
 
   # This description is used to generate tags and improve search results.
@@ -24,7 +24,8 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC A personal Library for Score suite apps
+  s.description  = <<-DESC
+  A personal Library for common code between JujitsuScore and JudoScore. 
                    DESC
 
   s.homepage     = "http://github.com/cmouline/ScoreLibrary"
@@ -38,8 +39,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE.md" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -72,6 +73,7 @@ Pod::Spec.new do |s|
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
+  s.swift_version = "4"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -90,8 +92,12 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "ScoreLibrary/ScoreLibrary/ScoreLibrary/Helpers",
+                    "ScoreLibrary/ScoreLibrary/ScoreLibrary/Delegates",
+                    "ScoreLibrary/ScoreLibrary/ScoreLibrary/Extensions",
+                    "ScoreLibrary/ScoreLibrary/ScoreLibrary/Custom Views",
+                    "ScoreLibrary/ScoreLibrary/ScoreLibrary/Custom Views/*.xib"
+  s.exclude_files = ""
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -105,7 +111,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "ScoreLibrary/ScoreLibrary/ScoreLibrary/Resources/Fonts"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

@@ -40,6 +40,14 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
     }
     
     func setup() {
+        for name in UIFont.familyNames {
+            print(name, separator: "", terminator: "")
+            if let nameString = name as? String
+            {
+                print(UIFont.fontNames(forFamilyName: nameString), separator: "", terminator: "")
+            }
+        }
+
         self.alpha = 0
         self.layer.borderWidth = 5
         self.layer.borderColor = UIColor.darkGray.cgColor
@@ -77,7 +85,7 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
                                             NSAttributedString.Key.foregroundColor: UIColor.black
             ])
         pickerLabel.textAlignment = .center
-        pickerLabel.attributedText = myTitle
+        pickerLabel.text = title
         return pickerLabel
     }
     

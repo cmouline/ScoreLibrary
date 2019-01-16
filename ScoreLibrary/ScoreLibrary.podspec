@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ScoreLibrary"
-  s.version      = "0.0.3"
+  s.version      = "0.0.6"
   s.summary      = "A personal Library for Score suite apps"
 
   # This description is used to generate tags and improve search results.

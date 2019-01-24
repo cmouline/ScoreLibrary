@@ -31,7 +31,9 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
     }
     
     private func xibInit() {
-        Bundle.main.loadNibNamed("TimePickerView", owner: self, options: nil)
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: "TimePickerView", bundle: bundle)
+        self.contentView = nib.instantiate(withOwner: self, options: nil).first as! UIView
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -40,11 +42,6 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
     }
     
     func setup() {
-        for name in UIFont.familyNames {
-            print(name, separator: "", terminator: "")
-            print(UIFont.fontNames(forFamilyName: name), separator: "", terminator: "")
-        }
-
         self.alpha = 0
         self.layer.borderWidth = 5
         self.layer.borderColor = UIColor.darkGray.cgColor

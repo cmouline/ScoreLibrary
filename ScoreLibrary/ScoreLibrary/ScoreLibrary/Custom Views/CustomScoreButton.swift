@@ -10,38 +10,7 @@ import UIKit
 
 enum ButtonStyle {
     // Common
-//    case menu
-//    case reset
-//    case medicalTime
-//    case victory
-//    case close
     case closeTime
-//    case backWhite
-//    case backGray
-//    case home
-//    case noFighterSelected
-//    case commonGrayButton
-//
-//    // Fight
-//    case shidoSelected
-//    case chuiSelected
-//    case hansokumakeSelected
-//    case forfeitSelected
-//    case shidoUnselected
-//    case chuiUnselected
-//    case hansokumakeUnselected
-//    case forfeitUnselected
-//    case leftFighterSelected
-//    case rightFighterSelected
-//
-//    // Duo
-//    case primaryKeyPad
-//    case secondaryKeyPad
-//    case submitKeyPad
-//    case notation
-//    case forfeitDuo
-//    case leftTeamSelected
-//    case rightTeamSelected
 }
 
 public typealias ButtonScoreClosure = (CustomScoreButton) -> Void

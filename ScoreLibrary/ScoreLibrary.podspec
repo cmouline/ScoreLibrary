@@ -95,7 +95,8 @@ Pod::Spec.new do |s|
   s.source_files  = "ScoreLibrary/ScoreLibrary/ScoreLibrary/Helpers",
                     "ScoreLibrary/ScoreLibrary/ScoreLibrary/Delegates",
                     "ScoreLibrary/ScoreLibrary/ScoreLibrary/Extensions",
-                    "ScoreLibrary/ScoreLibrary/ScoreLibrary/Custom Views"
+                    "ScoreLibrary/ScoreLibrary/ScoreLibrary/Custom Views",
+                    "ScoreLibrary/ScoreLibrary/ScoreLibrary/Custom Views/TimePickerView.xib"
   s.exclude_files = ""
 
   # s.public_header_files = "Classes/**/*.h"
@@ -111,9 +112,9 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   s.resources = "ScoreLibrary/ScoreLibrary/ScoreLibrary/Resources/Fonts"
-  s.resource_bundles = {
-    'TimePickerView' => ['ScoreLibrary/ScoreLibrary/ScoreLibrary/Custom Views/TimePickerView.xib']
-  }
+  # s.resource_bundles = {
+  #   'TimePickerView' => ['ScoreLibrary/ScoreLibrary/ScoreLibrary/Custom Views/TimePickerView.xib']
+  # }
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

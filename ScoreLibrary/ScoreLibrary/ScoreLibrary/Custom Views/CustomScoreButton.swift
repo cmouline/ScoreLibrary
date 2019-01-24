@@ -51,7 +51,6 @@ public class CustomScoreButton: UIButton {
             setTitle("\u{f00d}", for: .normal)
             setTitleColor(.black, for: .normal)
             titleLabel?.font = UIFont(name: "FontAwesome", size: 25)
-            contentEdgeInsets = UIEdgeInsets(top: 10, left: 15, bottom: 15, right: 15)
         }
     }
 

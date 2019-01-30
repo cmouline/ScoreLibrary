@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Helper {
+public class Helper {
 
     static func displayTwoDigitsScore(score: Int) -> String {
         return String(format: "%02d", score)

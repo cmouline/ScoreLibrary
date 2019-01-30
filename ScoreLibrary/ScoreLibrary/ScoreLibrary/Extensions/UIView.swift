@@ -45,8 +45,11 @@ public extension UIView {
         )
     }
     
-    public func stopBlinking() {
+    public func stopBlinking(keepShowing: Bool) {
         layer.removeAllAnimations()
+        if keepShowing {
+            self.alpha = 1
+        }
     }
     
     public func pauseAnimation(){

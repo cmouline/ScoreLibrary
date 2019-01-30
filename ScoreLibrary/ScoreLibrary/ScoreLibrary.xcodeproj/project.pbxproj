@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9221CB5821FEE61D00046B93 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221CB5721FEE61D00046B93 /* UIView.swift */; };
+		929AACD62201C3D300D4AC46 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AACD52201C3D300D4AC46 /* UIDevice.swift */; };
 		92B2C45421DD573800516330 /* ScoreLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B2C44A21DD573800516330 /* ScoreLibrary.framework */; };
 		92B2C45921DD573800516330 /* ScoreLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2C45821DD573800516330 /* ScoreLibraryTests.swift */; };
 		92B2C45B21DD573800516330 /* ScoreLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B2C44D21DD573800516330 /* ScoreLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		9221CB5721FEE61D00046B93 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		929AACD52201C3D300D4AC46 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		92B2C44A21DD573800516330 /* ScoreLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScoreLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B2C44D21DD573800516330 /* ScoreLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreLibrary.h; sourceTree = "<group>"; };
 		92B2C44E21DD573800516330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				92B2C47721DD5A6A00516330 /* UIButton.swift */,
 				92B2C47621DD5A6A00516330 /* UIColor.swift */,
 				9221CB5721FEE61D00046B93 /* UIView.swift */,
+				929AACD52201C3D300D4AC46 /* UIDevice.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9221CB5821FEE61D00046B93 /* UIView.swift in Sources */,
+				929AACD62201C3D300D4AC46 /* UIDevice.swift in Sources */,
 				92B2C47121DD598000516330 /* CustomScoreButton.swift in Sources */,
 				92B2C47821DD5A6A00516330 /* UIColor.swift in Sources */,
 				92B2C47421DD59A400516330 /* MainTimerDelegate.swift in Sources */,

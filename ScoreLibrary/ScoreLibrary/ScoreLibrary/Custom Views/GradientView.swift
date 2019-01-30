@@ -11,18 +11,21 @@ import UIKit
 @IBDesignable
 public class GradientView: UIView {
     
-    @IBInspectable var startColor:   UIColor = .black { didSet { updateColors() }}
-    @IBInspectable var endColor:     UIColor = .white { didSet { updateColors() }}
-    @IBInspectable var startLocation: Double =   0.05 { didSet { updateLocations() }}
-    @IBInspectable var endLocation:   Double =   0.95 { didSet { updateLocations() }}
-    @IBInspectable var horizontalMode:  Bool =  false { didSet { updatePoints() }}
-    @IBInspectable var diagonalMode:    Bool =  false { didSet { updatePoints() }}
-    
+    @IBInspectable public var startColor:   UIColor = .black { didSet { updateColors() }}
+    @IBInspectable public var endColor:     UIColor = .white { didSet { updateColors() }}
+    @IBInspectable public var startLocation: Double =   0.05 { didSet { updateLocations() }}
+    @IBInspectable public var endLocation:   Double =   0.95 { didSet { updateLocations() }}
+    @IBInspectable public var horizontalMode:  Bool =  false { didSet { updatePoints() }}
+    @IBInspectable public var diagonalMode:    Bool =  false { didSet { updatePoints() }}
+    @IBInspectable public var cornerRadius: CGFloat = 0.0 { didSet { updateCornerRadius() }}
+    @IBInspectable public var borderWidth:  CGFloat = 0.0 { didSet { updateBorder() }}
+    @IBInspectable public var borderColor:  UIColor = .clear { didSet { updateBorder() }}
+
     override public class var layerClass: AnyClass { return CAGradientLayer.self }
     
     var gradientLayer: CAGradientLayer { return layer as! CAGradientLayer }
     
-    func updatePoints() {
+    public func updatePoints() {
         if horizontalMode {
             gradientLayer.startPoint = diagonalMode ? CGPoint(x: 1, y: 0) : CGPoint(x: 0, y: 0.5)
             gradientLayer.endPoint   = diagonalMode ? CGPoint(x: 0, y: 1) : CGPoint(x: 1, y: 0.5)
@@ -32,12 +35,21 @@ public class GradientView: UIView {
         }
     }
     
-    func updateLocations() {
+    public func updateLocations() {
         gradientLayer.locations = [startLocation as NSNumber, endLocation as NSNumber]
     }
     
-    func updateColors() {
+    public func updateColors() {
         gradientLayer.colors    = [startColor.cgColor, endColor.cgColor]
+    }
+    
+    public func updateCornerRadius() {
+        self.layer.cornerRadius = cornerRadius
+    }
+    
+    public func updateBorder() {
+        self.layer.borderWidth = borderWidth
+        self.layer.borderColor = borderColor.cgColor
     }
     
     override public func layoutSubviews() {

@@ -65,7 +65,7 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
         return timeData[component].count
     }
     
-    private func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+    public func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         var title: String
         if component == 1  {
             title = Helper.formatTimeIntervalWithoutDecimalAndTwoDigits(interval: timeData[component][row])
@@ -83,7 +83,7 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
         return pickerLabel
     }
     
-    private func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if component == 1  {
             return Helper.formatTimeIntervalWithoutDecimalAndTwoDigits(interval: timeData[component][row])
         } else {
@@ -91,7 +91,7 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
         }
     }
     
-    private func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let minutes = timeData[0][pickerView.selectedRow(inComponent: 0)]
         let seconds = timeData[1][pickerView.selectedRow(inComponent: 1)]
         mainTimerDelegate?.resetMainTimer()

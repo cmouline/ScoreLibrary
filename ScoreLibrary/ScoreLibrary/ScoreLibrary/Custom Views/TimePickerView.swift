@@ -14,7 +14,7 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
     @IBOutlet weak var timePicker: UIPickerView!
     @IBOutlet weak var closeButton: CustomScoreButton!
 
-    var timeData: [[TimeInterval]] = [[TimeInterval]]()
+    public var timeData: [[TimeInterval]] = [[TimeInterval]]()
     
     public var mainTimerDelegate: MainTimerDelegate?
 

@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9211906C2203929700B632AE /* LemonMilkbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921190662203929600B632AE /* LemonMilkbold.otf */; };
+		9211906D2203929700B632AE /* LemonMilkbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921190662203929600B632AE /* LemonMilkbold.otf */; };
+		9211906E2203929700B632AE /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921190672203929600B632AE /* LemonMilk.otf */; };
+		9211906F2203929700B632AE /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921190672203929600B632AE /* LemonMilk.otf */; };
+		921190702203929700B632AE /* LemonMilkbolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921190682203929700B632AE /* LemonMilkbolditalic.otf */; };
+		921190712203929700B632AE /* LemonMilkbolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921190682203929700B632AE /* LemonMilkbolditalic.otf */; };
+		921190722203929700B632AE /* LemonMilkitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921190692203929700B632AE /* LemonMilkitalic.otf */; };
+		921190732203929700B632AE /* LemonMilkitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921190692203929700B632AE /* LemonMilkitalic.otf */; };
+		921190742203929700B632AE /* LemonMilklightitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9211906A2203929700B632AE /* LemonMilklightitalic.otf */; };
+		921190752203929700B632AE /* LemonMilklightitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9211906A2203929700B632AE /* LemonMilklightitalic.otf */; };
+		921190762203929700B632AE /* LemonMilklight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9211906B2203929700B632AE /* LemonMilklight.otf */; };
+		921190772203929700B632AE /* LemonMilklight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9211906B2203929700B632AE /* LemonMilklight.otf */; };
+		921190792203940500B632AE /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921190782203940500B632AE /* UILabel.swift */; };
+		9211907A2203940500B632AE /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921190782203940500B632AE /* UILabel.swift */; };
 		9221CB5821FEE61D00046B93 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221CB5721FEE61D00046B93 /* UIView.swift */; };
 		929AACD62201C3D300D4AC46 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AACD52201C3D300D4AC46 /* UIDevice.swift */; };
 		92B2C45421DD573800516330 /* ScoreLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B2C44A21DD573800516330 /* ScoreLibrary.framework */; };
@@ -43,6 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		921190662203929600B632AE /* LemonMilkbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilkbold.otf; sourceTree = "<group>"; };
+		921190672203929600B632AE /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
+		921190682203929700B632AE /* LemonMilkbolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilkbolditalic.otf; sourceTree = "<group>"; };
+		921190692203929700B632AE /* LemonMilkitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilkitalic.otf; sourceTree = "<group>"; };
+		9211906A2203929700B632AE /* LemonMilklightitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilklightitalic.otf; sourceTree = "<group>"; };
+		9211906B2203929700B632AE /* LemonMilklight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilklight.otf; sourceTree = "<group>"; };
+		921190782203940500B632AE /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		9221CB5721FEE61D00046B93 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		929AACD52201C3D300D4AC46 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		92B2C44A21DD573800516330 /* ScoreLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScoreLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +120,7 @@
 				92B2C47621DD5A6A00516330 /* UIColor.swift */,
 				9221CB5721FEE61D00046B93 /* UIView.swift */,
 				929AACD52201C3D300D4AC46 /* UIDevice.swift */,
+				921190782203940500B632AE /* UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,6 +154,12 @@
 			isa = PBXGroup;
 			children = (
 				92B2C47C21DD5CDF00516330 /* fontawesome-webfont.ttf */,
+				921190672203929600B632AE /* LemonMilk.otf */,
+				921190662203929600B632AE /* LemonMilkbold.otf */,
+				921190682203929700B632AE /* LemonMilkbolditalic.otf */,
+				921190692203929700B632AE /* LemonMilkitalic.otf */,
+				9211906B2203929700B632AE /* LemonMilklight.otf */,
+				9211906A2203929700B632AE /* LemonMilklightitalic.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -268,7 +296,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9211906E2203929700B632AE /* LemonMilk.otf in Resources */,
+				921190762203929700B632AE /* LemonMilklight.otf in Resources */,
 				92B2C46621DD582E00516330 /* TimePickerView.xib in Resources */,
+				921190702203929700B632AE /* LemonMilkbolditalic.otf in Resources */,
+				9211906C2203929700B632AE /* LemonMilkbold.otf in Resources */,
+				921190722203929700B632AE /* LemonMilkitalic.otf in Resources */,
+				921190742203929700B632AE /* LemonMilklightitalic.otf in Resources */,
 				92B2C47D21DD5CDF00516330 /* fontawesome-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +311,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9211906F2203929700B632AE /* LemonMilk.otf in Resources */,
+				921190772203929700B632AE /* LemonMilklight.otf in Resources */,
 				92B2C46721DD582E00516330 /* TimePickerView.xib in Resources */,
+				921190712203929700B632AE /* LemonMilkbolditalic.otf in Resources */,
+				9211906D2203929700B632AE /* LemonMilkbold.otf in Resources */,
+				921190732203929700B632AE /* LemonMilkitalic.otf in Resources */,
+				921190752203929700B632AE /* LemonMilklightitalic.otf in Resources */,
 				92B2C47E21DD5CDF00516330 /* fontawesome-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921190792203940500B632AE /* UILabel.swift in Sources */,
 				9221CB5821FEE61D00046B93 /* UIView.swift in Sources */,
 				929AACD62201C3D300D4AC46 /* UIDevice.swift in Sources */,
 				92B2C47121DD598000516330 /* CustomScoreButton.swift in Sources */,
@@ -309,6 +350,7 @@
 				92B2C47921DD5A6A00516330 /* UIColor.swift in Sources */,
 				92B2C46921DD582E00516330 /* TimePickerView.swift in Sources */,
 				92B2C47B21DD5A6A00516330 /* UIButton.swift in Sources */,
+				9211907A2203940500B632AE /* UILabel.swift in Sources */,
 				92B2C46D21DD58BA00516330 /* GradientView.swift in Sources */,
 				92B2C47521DD59A400516330 /* MainTimerDelegate.swift in Sources */,
 				92B2C46F21DD58BA00516330 /* Helper.swift in Sources */,

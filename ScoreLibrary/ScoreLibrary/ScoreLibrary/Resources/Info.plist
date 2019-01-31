@@ -4,6 +4,12 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>LemonMilk.otf</string>
+		<string>LemonMilkbold.otf</string>
+		<string>LemonMilkbolditalic.otf</string>
+		<string>LemonMilkitalic.otf</string>
+		<string>LemonMilklight.otf</string>
+		<string>LemonMilklightitalic.otf</string>
 		<string>fontawesome-webfont.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>

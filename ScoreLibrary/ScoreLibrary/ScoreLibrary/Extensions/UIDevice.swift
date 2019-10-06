@@ -11,7 +11,7 @@ import AVFoundation
 
 public extension UIDevice {
     
-    public static func vibrate() {
+    static func vibrate() {
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
     }
 }

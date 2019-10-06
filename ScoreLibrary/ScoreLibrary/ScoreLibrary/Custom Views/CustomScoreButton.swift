@@ -49,8 +49,8 @@ public class CustomScoreButton: UIButton {
         switch style {
         case .closeTime :
             setTitle("\u{f00d}", for: .normal)
-            setTitleColor(.black, for: .normal)
-            titleLabel?.font = UIFont(name: "FontAwesome", size: 25)
+            setTitleColor(.white, for: .normal)
+            titleLabel?.font = UIFont(name: "FontAwesome", size: 50)
         }
     }
 

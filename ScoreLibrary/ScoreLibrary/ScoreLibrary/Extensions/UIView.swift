@@ -52,13 +52,13 @@ public extension UIView {
         }
     }
     
-    func pauseAnimation(){
+    func pauseAnimation() {
         let pausedTime = layer.convertTime(CACurrentMediaTime(), from: nil)
         layer.speed = 0.0
         layer.timeOffset = pausedTime
     }
     
-    func resumeAnimation(){
+    func resumeAnimation() {
         let pausedTime = layer.timeOffset
         layer.speed = 1.0
         layer.timeOffset = 0.0

@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension UILabel {
+public extension UILabel {
     
-    public func setFont(fontName: String, size: CGFloat?) {
+    func setFont(fontName: String, size: CGFloat?) {
         if let size = size {
             self.font = UIFont(name: fontName, size: size)
         } else {

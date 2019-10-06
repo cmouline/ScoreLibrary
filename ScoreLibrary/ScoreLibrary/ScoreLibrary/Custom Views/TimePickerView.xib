@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LemonMilk.otf">
+            <string>LemonMilk</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimePickerView" customModule="ScoreLibrary" customModuleProvider="target">
             <userDefinedRuntimeAttributes>
@@ -26,32 +31,43 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="685" height="375"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOC-qA-dAF">
-                    <rect key="frame" x="50" y="0.0" width="100" height="150"/>
-                </pickerView>
-                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyy-No-tHp" customClass="CustomScoreButton" customModule="ScoreLibrary" customModuleProvider="target">
-                    <rect key="frame" x="160" y="10" width="30" height="30"/>
+                    <rect key="frame" x="242.5" y="0.0" width="200" height="375"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="30" id="Jo9-XS-P8B"/>
-                        <constraint firstAttribute="height" constant="30" id="ugl-kp-r1g"/>
+                        <constraint firstAttribute="width" constant="200" id="fTw-ma-mLN"/>
+                    </constraints>
+                </pickerView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkg-9M-j2c">
+                    <rect key="frame" x="322.5" y="138" width="20" height="99.5"/>
+                    <fontDescription key="fontDescription" name="LemonMilk" family="Lemon/Milk" pointSize="70"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyy-No-tHp" customClass="CustomScoreButton" customModule="ScoreLibrary" customModuleProvider="target">
+                    <rect key="frame" x="575" y="50" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Jo9-XS-P8B"/>
+                        <constraint firstAttribute="height" constant="60" id="ugl-kp-r1g"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Hyy-No-tHp" secondAttribute="trailing" constant="10" id="4hQ-aT-FUy"/>
+                <constraint firstItem="mOC-qA-dAF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3Aa-2m-hJP"/>
+                <constraint firstAttribute="trailing" secondItem="Hyy-No-tHp" secondAttribute="trailing" constant="50" id="4hQ-aT-FUy"/>
+                <constraint firstItem="Hkg-9M-j2c" firstAttribute="centerX" secondItem="mOC-qA-dAF" secondAttribute="centerX" constant="-10" id="9BC-UT-ncq"/>
                 <constraint firstItem="mOC-qA-dAF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cx1-KM-MAr"/>
-                <constraint firstItem="Hyy-No-tHp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="boy-Hk-pFh"/>
+                <constraint firstItem="Hkg-9M-j2c" firstAttribute="centerY" secondItem="mOC-qA-dAF" secondAttribute="centerY" id="DuZ-vs-W6Y"/>
+                <constraint firstItem="mOC-qA-dAF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Epf-SG-RkK"/>
+                <constraint firstItem="Hyy-No-tHp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="boy-Hk-pFh"/>
                 <constraint firstAttribute="bottom" secondItem="mOC-qA-dAF" secondAttribute="bottom" id="dE0-YM-H0c"/>
-                <constraint firstAttribute="trailing" secondItem="mOC-qA-dAF" secondAttribute="trailing" constant="50" id="hHc-hz-1d9"/>
-                <constraint firstItem="mOC-qA-dAF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="qRm-Ib-sAp"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-139.19999999999999" y="-125.03748125937032"/>
+            <point key="canvasLocation" x="-138.40000000000001" y="-23.838080959520241"/>
         </view>
     </objects>
 </document>

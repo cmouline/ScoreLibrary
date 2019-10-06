@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDataSource {
+public class TimePickerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
    
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var timePicker: UIPickerView!
@@ -43,9 +43,7 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
     
     func setup() {
         self.alpha = 0
-        self.layer.borderWidth = 5
-        self.layer.borderColor = UIColor.darkGray.cgColor
-        self.layer.cornerRadius = 20
+        self.backgroundColor = .blurredBlack
 
         timePicker.delegate = self
         timePicker.dataSource = self
@@ -65,21 +63,25 @@ public class TimePickerView: GradientView, UIPickerViewDelegate, UIPickerViewDat
         return timeData[component].count
     }
     
+    public func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 80.0
+    }
+    
     public func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         var title: String
+        let pickerLabel = UILabel()
         if component == 1  {
             title = Helper.formatTimeIntervalWithoutDecimalAndTwoDigits(interval: timeData[component][row])
         } else {
             title = Helper.formatTimeIntervalWithoutDecimal(interval: timeData[component][row])
         }
-        let pickerLabel = UILabel()
         let myTitle = NSAttributedString(string: title,
                                          attributes: [
-                                            NSAttributedString.Key.font: UIFont(name: "LemonMilk", size: 28.0)!,
-                                            NSAttributedString.Key.foregroundColor: UIColor.black
+                                            NSAttributedString.Key.font: UIFont(name: "LemonMilk", size: 70.0)!,
+                                            NSAttributedString.Key.foregroundColor: UIColor.white,
             ])
-        pickerLabel.textAlignment = .center
         pickerLabel.attributedText = myTitle
+        pickerLabel.textAlignment = .center
         return pickerLabel
     }
     
